@@ -24,5 +24,5 @@ libraryDependencies ++= Seq(
 
 
 sonarProperties := Map(
-  "sonar.coverage.exclusions" -> "**Driver.scala,**SelectDBFunctions.scala,**UpdateDBFunctions.scala, **DeleteDBFunctions.scala"
+  "sonar.coverage.exclusions" -> "**Driver.scala,**Student.scala,**Teacher.scala,**StudentTable.scala,**TeacherTable.scala,**Connection.scala,**SelectDBFunctions.scala,**UpdateDBFunctions.scala,**DeleteDBFunctions.scala"
 )
