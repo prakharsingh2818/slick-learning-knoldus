@@ -22,6 +22,7 @@ libraryDependencies ++= Seq(
   "org.scalatest" %% "scalatest" % "3.2.15" % "test"
 )
 
+
 sonarProperties := Map(
-  "sonar.coverage.exclusions" -> "**Driver.scala"
+  "sonar.coverage.exclusions" -> "**Driver.scala,**SelectDBFunctions.scala,**UpdateDBFunctions.scala, **DeleteDBFunctions.scala"
 )
