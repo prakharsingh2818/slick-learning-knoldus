@@ -1,3 +1,5 @@
+import sbtsonar.SonarPlugin.autoImport.sonarProperties
+
 ThisBuild / version := "0.1.0-SNAPSHOT"
 
 ThisBuild / scalaVersion := "2.13.10"
@@ -18,4 +20,8 @@ libraryDependencies ++= Seq(
   "com.typesafe.scala-logging" %% "scala-logging" % "3.9.5",
 
   "org.scalatest" %% "scalatest" % "3.2.15" % "test"
+)
+
+sonarProperties := Map(
+  "sonar.coverage.exclusions" -> "**Driver.scala"
 )
